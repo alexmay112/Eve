@@ -1,0 +1,45 @@
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: $main-text-color;
+
+    &:hover {
+        text-decoration: none;
+        color: $main-text-color;
+        transition: 0.3s;
+    }
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
