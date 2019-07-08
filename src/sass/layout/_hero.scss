@@ -1,0 +1,31 @@
+.hero {
+    min-height: 850px;
+    background: url("../img/main-bg.png") 50% -228px no-repeat;
+    position: relative;
+}
+.logo {
+    &__link {
+        font-size: 0;
+    }
+}
+
+.product-photo {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-100%);
+    &__wrapper {
+        position: relative;
+    }
+    &__price {
+        position: absolute;
+        &_primary {
+            top: 10px;
+            left: 376px;
+        }
+        &_secondary {
+            top: 140px;
+            left: 470px;
+        }
+    }
+}
