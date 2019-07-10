@@ -1,0 +1,48 @@
+.medication {
+    &__wrapper {
+        margin-top: 75px;
+        display: flex;
+    }
+    &__list-wrapper,
+    &__photo-wrapper {
+        flex-basis: 50%;
+    }
+    &__photo-wrapper {
+        text-align: right;
+    }
+    &__item {
+        min-height: 135px;
+        padding-left: 160px;
+        display: flex;
+        align-items: center;
+        &_tablets {
+            background: url("../img/icon-tablets.png") 0 50% no-repeat;
+        }
+        &_tablets-with-glass {
+            background: url("../img/icon-tablets-with-glass.png") 0 50% no-repeat;
+        }
+        &_calendar {
+            background: url("../img/icon-calendar.png") 0 50% no-repeat;
+        }
+        &:not(:first-child) {
+            margin-top: 15px;
+        }
+    }
+    &__text {
+        margin: 0;
+        color: #000000;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 3px;
+            top: -15px;
+            background-color: $second-accent-color;
+        }
+    }
+}
