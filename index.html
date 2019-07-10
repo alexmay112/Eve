@@ -8,7 +8,7 @@
         <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
         <link href="assets/css/main.css" rel="stylesheet">
         <link
-            href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700&display=swap&subset=cyrillic"
+            href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,900&display=swap&subset=cyrillic"
             rel="stylesheet">
         <link
             rel="stylesheet"
@@ -20,9 +20,9 @@
 
         <div class="hero">
             <div class="container">
-                <header class="header row">
-                    <div class="col-md-6">
-                        <div class="logo">
+                <header class="header row justify-content-between">
+                    <div class="col-md-4">
+                        <div class="logo text-right">
                             <h1 class="logo__title">
                                 <a href="/" class="logo__link" title="На главную">
                                     Микоцин
@@ -31,67 +31,116 @@
                             </h1>
                         </div>
                     </div>
-                    <div class="col-md-2">
-                        <p>№1 Для избавления от любого типа грибка</p>
-                    </div>
-                    <div class="col-md-2">
-                        <p>Рекомендован дерматологами
-                        </p>
-                    </div>
-                    <div class="col-md-2">
-                        <p>13000+ довольных клиентов за 2018 год
-                        </p>
+
+                    <div class="col-md-8 d-flex align-items-center">
+                        <ul class="bulits">
+                            <li class="bulits__item">
+                                <p class="bulits__text bulits__text_type">№1 Для избавления от любого типа грибка</p>
+                            </li>
+                            <li class="bulits__item">
+                                <p class="bulits__text bulits__text_advise">Рекомендован дерматологами</p>
+                            </li>
+                            <li class="bulits__item">
+                                <p class="bulits__text bulits__text_stat">13000+ довольных клиентов за 2018 год</p>
+                            </li>
+                        </ul>
                     </div>
                 </header>
+
                 <div class="promo row justify-content-end">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <h2 class="promo__title">
-                            Комплексное избавление от грибка — изнутри и снаружи
+                            Комплексное избавление от грибка —
+                            <br>
+                            <small class="promo__title_small">
+                                <span class="promo__title_main-accent">изнутри</span>
+                                и
+                                <span class="promo__title_second-accent">снаружи</span>
+                            </small>
                         </h2>
-                        <ul class="promo__list">
-                            <li class="promo__item">
-                                <p class="promo__features">
-                                    Комплекс Микоцин устраняет зуд, неприятный запах и возвращает эстетичный вид
+
+                        <ul class="features-list">
+                            <li class="features-list__item d-flex align-items-center">
+                                <div class="features-list__number-box">
+                                    <span class="features-list__number">2 в 1</span>
+                                </div>
+                                <p class="features-list__text">
+                                    Комплекс Микоцин
+                                    <strong>устраняет зуд, неприятный запах</strong>
+                                    и возвращает эстетичный вид
                                 </p>
                             </li>
-                            <li class="promo__item">
-                                <p class="promo__features">
-                                    Таблетки Микоцин уничтожают все виды грибка на ногтях и коже
+                            <li class="features-list__item d-flex align-items-center">
+                                <div class="features-list__number-box">
+                                    <span class="features-list__number">1</span>
+                                </div>
+                                <p class="features-list__text">
+                                    <strong class="features-list_pill">Таблетки</strong>
+                                    Микоцин
+                                    <strong>уничтожают все виды грибка</strong>
+                                    на ногтях и коже
                                 </p>
                             </li>
-                            <li class="promo__item">
-                                <p class="promo__features">
-                                    Гель Микоцин восстанавливает кожу и создает на ней защитный барьер
+                            <li class="features-list__item d-flex align-items-center">
+                                <div class="features-list__number-box">
+                                    <span class="features-list__number">2</span>
+                                </div>
+                                <p class="features-list__text">
+                                    <strong class="features-list_gel">Гель</strong>
+                                    Микоцин
+                                    <strong>восстанавливает кожу</strong>
+                                    и создает на ней
+                                    <strong>защитный барьер</strong>
                                 </p>
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-3">
                         <div class="order-form">
-                            <p class="order-form__title">
-                                Успейте заказать со скидкой
-                                <span>до 10.09.2018</span>
-                            </p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <span>старая цена</span>
-                                    918&nbsp;&#x20bd;
+                            <div class="order-form__wrapper">
+                                <div class="order-form__delivery">
+                                    <span class="order-form__delivery-text">
+                                        Бесплатно
+                                    </span>
                                 </div>
-                                <div class="col-md-6">
-                                    <span>новая цена</span>
-                                    459&nbsp;&#x20bd;
+                                <p class="order-form__title">
+                                    Успейте заказать со скидкой
+                                    <span class="order-form__promotion-date">до 10.09.2018</span>
+                                </p>
+                                <div class="row no-gutters">
+                                    <div class="col-md-6 text-center">
+                                        <span class="order-form__old-price">старая цена</span>
+                                        <span class="order-form__old-amount d-flex justify-content-center">918&#x20bd;</span>
+                                    </div>
+                                    <div class="col-md-6 text-center">
+                                        <span class="order-form__new-price">новая цена</span>
+                                        <span class="order-form__new-amount">459&#x20bd;</span>
+                                    </div>
                                 </div>
+                                <form action="#" method="POST">
+                                    <input
+                                        class="order-form__name order-form__input"
+                                        type="text"
+                                        name="name"
+                                        placeholder="Имя">
+                                    <input
+                                        class="order-form__phone order-form__input"
+                                        type="text"
+                                        name="phone"
+                                        placeholder="Телефон">
+                                    <div class="order-form__submit-wrapper">
+                                        <input
+                                            class="order-form__submit order-form__input"
+                                            type="submit"
+                                            value="Заказать">
+                                    </div>
+                                </form>
+                                <p class="order-form__action">
+                                    Осталось
+                                    <span class="order-form__remains">10</span>
+                                    упаковок со скидкой
+                                </p>
                             </div>
-                            <form action="#" method="POST">
-                                <input type="text" name="name" placeholder="Имя">
-                                <input type="text" name="phone" placeholder="Телефон">
-                                <input type="submit" value="Заказать со скидкой">
-                            </form>
-                            <p class="order-form__action">
-                                Осталось
-                                <span>10</span>
-                                упаковок со скидкой
-                            </p>
                             <p class="order-form__secure-info">
                                 Ваши данные защищены!
                             </p>
@@ -99,9 +148,9 @@
                     </div>
                     <div class="product-photo">
                         <div class="product-photo__wrapper">
-                            <span class="product-photo__price product-photo__price_primary">299&nbsp;&#x20bd;</span>
-                            <span class="product-photo__price product-photo__price_secondary">299&nbsp;&#x20bd;</span>
-                            <img class="product-photo__img" src="assets/img/product-main.png" alt="Микоцин">
+                            <span class="product-photo__price product-photo__price_primary">299&#x20bd;</span>
+                            <span class="product-photo__price product-photo__price_secondary">299&#x20bd;</span>
+                            <img class="product-photo__img" src="assets/img/product-main.png" alt="Микоцин цена">
                         </div>
                     </div>
                 </div>

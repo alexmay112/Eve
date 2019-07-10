@@ -1,11 +1,277 @@
 .hero {
     min-height: 850px;
+    padding-top: 15px;
     background: url("../img/main-bg.png") 50% -228px no-repeat;
     position: relative;
 }
+
 .logo {
     &__link {
         font-size: 0;
+    }
+}
+
+.bulits {
+    display: flex;
+    &__item {
+        max-width: 225px;
+        display: flex;
+        align-items: center;
+        &:not(:first-child) {
+            margin-left: 30px;
+        }
+    }
+    &__text {
+        margin-bottom: 0;
+        padding-left: 55px;
+        font-size: 16px;
+        font-style: italic;
+        color: #666666;
+        &_advise,
+        &_stat,
+        &_type {
+            background-position: 0 50%;
+            background-repeat: no-repeat;
+        }
+        &_type {
+            background-image: url("../img/bulit-icon-1.png");
+        }
+        &_advise {
+            background-image: url("../img/bulit-icon-2.png");
+        }
+        &_stat {
+            background-image: url("../img/bulit-icon-3.png");
+        }
+    }
+}
+
+.promo {
+    &__title {
+        padding-bottom: 44px;
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 44px;
+        &_small {
+            font-size: 34px;
+            font-weight: 700;
+        }
+        &_main-accent,
+        &_second-accent {
+            position: relative;
+            z-index: 0;
+            &:after {
+                content: "";
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                display: block;
+                transform: translateY(-1px);
+                z-index: -1;
+            }
+        }
+        &_main-accent {
+            &:after {
+                border-bottom: 5px solid $main-accent-color;
+            }
+        }
+        &_second-accent {
+            &:after {
+                border-bottom: 5px solid $second-accent-color;
+            }
+        }
+    }
+}
+
+.features-list {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 9px;
+        height: 146px;
+        display: block;
+        background: url("../img/arrow-2-in-1.png") no-repeat;
+        left: 25px;
+        top: 48%;
+        transform: translateY(-50%);
+    }
+    &__item {
+        margin-bottom: 40px;
+    }
+    &__number {
+        display: inline-flex;
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 700;
+        border-radius: 100%;
+        background: url("../img/features-bg.jpg") no-repeat;
+    }
+    &__text {
+        margin-bottom: 0;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    &_pill {
+        border-bottom: 3px solid $main-accent-color;
+    }
+    &_gel {
+        border-bottom: 3px solid $second-accent-color;
+    }
+}
+
+.order-form {
+    &__wrapper {
+        padding: 48px 18px 18px;
+        border: 7px solid $second-accent-color;
+        box-shadow: 0 0 40px rgba(29, 91, 152, 0.1);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom: none;
+        background-color: #ffffff;
+        position: relative;
+        &::after {
+            content: "";
+            display: block;
+            width: 49px;
+            height: 233px;
+            position: absolute;
+            right: -33px;
+            top: 200px;
+            background: url("../img/arrow-form.png") 0 0 no-repeat;
+        }
+    }
+    &__delivery {
+        padding: 0 14px 7px 45px;
+        position: absolute;
+        top: -7px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 7px solid $second-accent-color;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top: 0;
+        background: #ebf3fb url("../img/delivery-car.png") 11px 30% no-repeat;
+    }
+    &__delivery-text {
+        font-size: 16px;
+    }
+    &__title {
+        font-size: 20px;
+        color: #000000;
+        text-align: center;
+    }
+    &__promotion-date {
+        display: block;
+        font-weight: 500;
+        color: $main-accent-color;
+    }
+    &__old-price {
+        color: #666666;
+        font-size: 14px;
+    }
+    &__old-amount {
+        color: #0b0b0b;
+        font-size: 34px;
+        font-weight: 300;
+        position: relative;
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 100px;
+            top: 50%;
+            display: block;
+            background-color: $main-accent-color;
+        }
+        &:before {
+            transform: rotate(10deg);
+        }
+        &:after {
+            transform: rotate(-10deg);
+        }
+    }
+    &__new-price {
+        color: #000000;
+        font-size: 14px;
+    }
+    &__new-amount {
+        padding: 0 10px;
+        color: #000000;
+        font-size: 34px;
+        font-weight: 900;
+        display: inline-block;
+        border-radius: 5px;
+        background-color: #ffcb02;
+    }
+    &__input {
+        width: 100%;
+        padding: 25px 25px 25px 55px;
+        border-radius: 32px;
+    }
+    &__name,
+    &__phone {
+        margin-top: 10px;
+        font-size: 16px;
+        border: none;
+        box-shadow: inset 0 2px 7px rgba(0, 0, 0, 0.04);
+    }
+    &__name {
+        background: #eef2f7 url("../img/user-icon.png") 20px 50% no-repeat;
+    }
+    &__phone {
+        background: #eef2f7 url("../img/phone-icon.png") 20px 50% no-repeat;
+    }
+    &__submit-wrapper {
+        margin: 10px 0 20px;
+        border: 5px solid #ffcb02;
+        border-radius: 100px;
+        position: relative;
+        &::after {
+            content: "со скидкой";
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+    &__submit {
+        width: 100%;
+        padding: 5px 15px 20px;
+        border-radius: 100px;
+        background-color: #ffcb02;
+        border: 2px solid rgba(255, 255, 255, .3);
+        color: #000000;
+        font-size: 28px;
+        font-weight: 700;
+    }
+    &__remains {
+        color: $second-accent-color;
+    }
+    &__action {
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 18px;
+        color: #333333;
+    }
+    &__secure-info {
+        padding: 15px 15px 15px 45px;
+        font-size: 14px;
+        color: #666666;
+        text-align: center;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border: 7px solid $second-accent-color;
+        border-top: none;
+        background: #eef2f7 url("../img/icon-guard.png") 28px 50% no-repeat;
     }
 }
 
@@ -18,14 +284,20 @@
         position: relative;
     }
     &__price {
+        padding: 0 11px;
+        font-size: 34px;
+        font-weight: 900;
         position: absolute;
+        border-radius: 8px;
         &_primary {
-            top: 10px;
-            left: 376px;
+            top: -15px;
+            left: 330px;
+            background-color: $main-accent-color;
         }
         &_secondary {
-            top: 140px;
-            left: 470px;
+            top: 115px;
+            left: 440px;
+            background-color: $second-accent-color;
         }
     }
 }
