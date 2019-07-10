@@ -1,0 +1,115 @@
+.main-color-accent {
+    color: $main-accent-color;
+}
+.effective {
+    .section-header__title::before {
+        background: url("../img/mikocin-logo-single.png") 50% no-repeat;
+    }
+    .section-header__subtitle {
+        font-size: 23px;
+        line-height: 48px;
+        font-weight: 400;
+    }
+    &__footer {
+        margin-top: 32px;
+    }
+}
+.effective__list {
+    margin-top: 90px;
+}
+.effective-list {
+    display: flex;
+    justify-content: space-between;
+    &__item {
+        max-width: 370px;
+        padding: 85px 30px 30px;
+        border: 4px solid $main-accent-color;
+        border-radius: 10px;
+        text-align: center;
+        position: relative;
+        &:not(:first-child) {
+            margin-left: 30px;
+        }
+        &-title {
+            font-size: 24px;
+            color: #000000;
+            font-weight: 700;
+            line-height: 28px;
+        }
+        &-text {
+            margin: 0;
+            font-size: 18px;
+            line-height: 26px;
+        }
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 106px;
+            height: 53px;
+            top: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            background-color: #ffffff;
+            border: 4px solid $main-accent-color;
+            border-top: 0;
+        }
+        &_product {
+            position: relative;
+            border: 4px solid $second-accent-color;
+        }
+    }
+}
+
+.effective-list__item_product::before {
+    border: 4px solid $second-accent-color;
+    border-top: 0;
+}
+
+.effective-list__item {
+    &_creams::after,
+    &_honey::after,
+    &_product::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 106px;
+        height: 80px;
+        top: -55px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.effective-list__item_creams::after {
+    background: url("../img/icon-creams.png") 50% no-repeat;
+}
+.effective-list__item_honey::after {
+    background: url("../img/icon-honey.png") 50% no-repeat;
+}
+.effective-list__item_product::after {
+    background: url("../img/icon-product.png") 50% no-repeat;
+}
+
+.effective-footer {
+    &__text-wrapper {
+        padding: 4px;
+        border-radius: 10px;
+        background: $second-accent-color;
+        background: linear-gradient(to right, rgb(255,107,0) 0%, rgb(167,202,63) 100%);
+        // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6b00', endColorstr='#a7ca3f', GradientType=1 );
+    }
+    &__text {
+        margin: 0;
+        padding: 30px;
+        text-align: center;
+        color: #000000;
+        font-size: 27px;
+        font-weight: 500;
+        line-height: 26.52px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+}
