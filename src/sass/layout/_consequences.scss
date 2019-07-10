@@ -1,0 +1,104 @@
+.section {
+    padding: 100px 0;
+    &_dark {
+        background-color: #f0f9fa;
+    }
+}
+
+.section-header {
+    &__title {
+        color: #383334;
+        font-size: 48px;
+        font-weight: 900;
+        position: relative;
+        &::before {
+            content: "";
+            width: 92px;
+            height: 65px;
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: -83px;
+            transform: translateX(-50%);
+            background: url("../img/mikocin-logo.png");
+        }
+    }
+    &__subtitle {
+        color: #2b2828;
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
+
+.consequences {
+    &__item {
+        &-title {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 26px;
+            color: #000000;
+        }
+    }
+    &__photo-box {
+        display: flex;
+        align-items: center;
+    }
+    &__photo-wrapper {
+        flex-basis: 50%;
+        position: relative;
+        &::after {
+            content: "1";
+            display: block;
+            position: absolute;
+            right: 8px;
+            top: 5px;
+            font-size: 30px;
+            color: #ffffff;
+        }
+    }
+    &__item-title {
+        padding-left: 18px;
+        flex-basis: 50%;
+    }
+    &__text {
+        margin-top: 54px;
+        font-size: 18px;
+        line-height: 28px;
+        position: relative;
+        &::before {
+            height: 3px;
+            width: 50px;
+            position: absolute;
+            left: 0;
+            top: -23px;
+            background-color: #becbd8;
+            content: "";
+        }
+    }
+    &__statistic {
+        margin-top: 75px;
+    }
+}
+.statistic {
+    &__text {
+        padding: 40px 90px;
+        text-align: center;
+        border: 3px solid #f4d3bb;
+        border-radius: 5px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        position: relative;
+        ::before {
+            height: 40px;
+            width: 170px;
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: -20px;
+            transform: translateX(-50%);
+            background: #ffffff url("../img/icon-stat.png") 50% no-repeat;
+            content: "";
+        }
+    }
+}
