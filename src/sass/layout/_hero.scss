@@ -21,7 +21,7 @@
 }
 
 .logo {
-    transform: translateX(100%);
+    transform: translateX(120%);
     &__title {
         margin-bottom: 15px;
     }
@@ -86,6 +86,7 @@
         max-width: 700px;
     }
     &__title {
+        margin: 0;
         padding-bottom: 44px;
         font-size: 44px;
         font-weight: 900;
@@ -147,6 +148,8 @@
     }
     &__item {
         margin-bottom: 40px;
+        display: flex;
+        align-items: center;
     }
     &__number {
         display: inline-flex;
@@ -162,7 +165,7 @@
         background: url("../img/features-bg.jpg") no-repeat;
     }
     &__text {
-        margin-bottom: 0;
+        margin: 0;
         font-size: 20px;
         line-height: 24px;
     }
@@ -343,7 +346,7 @@
 
 .product-photo {
     position: absolute;
-    bottom: -125px;
+    bottom: -170px;
     left: -80px;
     &__wrapper {
         position: relative;
