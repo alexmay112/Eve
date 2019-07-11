@@ -9,6 +9,7 @@
     &__title {
         color: #383334;
         font-size: 48px;
+        text-align: center;
         font-weight: 900;
         position: relative;
         &::before {
@@ -28,6 +29,7 @@
         color: #2b2828;
         font-size: 24px;
         font-weight: 700;
+        text-align: center;
     }
 }
 
@@ -124,5 +126,11 @@
             transform: translateX(-50%);
             background: #ffffff url("../img/icon-stat.png") 50% no-repeat;
         }
+    }
+}
+
+@media (max-width: 510px) {
+    .section-footer__text {
+        padding: 40px 30px;
     }
 }

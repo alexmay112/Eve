@@ -10,6 +10,9 @@
     &__photo-wrapper {
         text-align: right;
     }
+    &__list {
+        max-width: 380px;
+    }
     &__item {
         min-height: 135px;
         padding-left: 160px;
@@ -44,5 +47,21 @@
             top: -15px;
             background-color: $second-accent-color;
         }
+    }
+}
+
+@media (max-width: 830px) {
+    .medication__wrapper {
+        flex-direction: column;
+    }
+    .medication__photo-wrapper {
+        text-align: center;
+        order: 1;
+    }
+    .medication__list-wrapper {
+        order: 0;
+        }
+    .medication__list {
+        margin: 0 auto;
     }
 }
