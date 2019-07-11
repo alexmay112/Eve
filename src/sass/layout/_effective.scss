@@ -28,7 +28,7 @@
         text-align: center;
         position: relative;
         &:not(:first-child) {
-            margin-left: 30px;
+            margin-left: 15px;
         }
         &-title {
             font-size: 24px;
@@ -111,5 +111,17 @@
         line-height: 26.52px;
         background-color: #fff;
         border-radius: 8px;
+    }
+}
+@media (max-width: 767px) {
+    .effective-list {
+        flex-direction: column;
+        &__item {
+            max-width: none;
+            margin-bottom: 60px;
+            &:not(:first-child) {
+                margin-left: 0;
+            }
+        }
     }
 }
