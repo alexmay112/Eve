@@ -1,8 +1,15 @@
 .section {
-    padding: 100px 0;
+    padding: 150px 0;
     &_dark {
-        background-color: #f0f9fa;
+        background: url("../img/bg-wave.png") 50% 0 repeat-x, url("../img/bg-wave-up.png") 50% 100% repeat-x;
+        background-color: #f0f9fa ;
     }
+}
+
+.medication.section_dark {
+    background: url("../img/bg-wave.png") 50% 0 repeat-x;
+    background-color: #f0f9fa ;
+
 }
 
 .section-header {
