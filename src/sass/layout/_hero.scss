@@ -21,6 +21,7 @@
 }
 
 .logo {
+    transform: translateX(100%);
     &__title {
         margin-bottom: 15px;
     }
@@ -29,6 +30,12 @@
     }
     &__img {
         max-width: none;
+    }
+}
+
+@media (max-width: 1170px) {
+    .logo {
+        transform: none;
     }
 }
 
@@ -327,6 +334,7 @@
         background: #eef2f7 url("../img/icon-guard.png") 28px 50% no-repeat;
     }
 }
+
 @media (max-width:580px) {
     .order-form__delivery {
         background-color: #f7f9fb;
