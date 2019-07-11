@@ -4,18 +4,16 @@
 
 .non-effective-list {
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
+    flex-wrap: wrap;
     &__item {
         max-width: 370px;
+        margin-bottom: 65px;
         background-color: #fff;
         box-shadow: 0 0 15px rgba(37, 83, 129, 0.08);
         border-radius: 10px;
         text-align: center;
         position: relative;
-        &:not(:first-child) {
-            margin-left: 15px;
-        }
         &:before {
             content: "";
             display: block;
@@ -99,7 +97,7 @@
 
 .non-effective {
     &__important {
-        @extend .consequences__statistic;
+        margin-top: 15px;
     }
     .section-footer__text::before {
         content: "Вывод:";
