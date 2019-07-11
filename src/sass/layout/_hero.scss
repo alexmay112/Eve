@@ -194,10 +194,9 @@
             width: 49px;
             height: 233px;
             position: absolute;
-            right: -24px;
-            top: 200px;
+            right: -32px;
+            top: 175px;
             background: url("../img/arrow-form.png") 0 0 no-repeat;
-            transform: scaleX(0.7);
         }
     }
     &__delivery {
@@ -216,6 +215,7 @@
         font-size: 16px;
     }
     &__title {
+        margin-top: 0;
         font-size: 20px;
         color: #000000;
         text-align: center;
@@ -235,6 +235,7 @@
         text-align: center;
     }
     &__old-price {
+        margin-bottom: 7px;
         color: #666666;
         font-size: 14px;
     }
@@ -261,6 +262,7 @@
         }
     }
     &__new-price {
+        margin-bottom: 7px;
         color: #000000;
         font-size: 14px;
     }
@@ -299,7 +301,7 @@
         &::after {
             content: "со скидкой";
             position: absolute;
-            top: 40px;
+            top: 35px;
             left: 50%;
             transform: translateX(-50%);
             font-size: 16px;

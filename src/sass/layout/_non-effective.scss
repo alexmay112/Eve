@@ -6,6 +6,10 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    &__overflow {
+        overflow: hidden;
+        border-radius: 10px;
+    }
     &__item {
         max-width: 370px;
         margin-bottom: 65px;
@@ -32,8 +36,6 @@
     &__item-wrapper {
         padding: 65px 20px 20px;
         border-top: 5px solid $second-accent-color;
-        border-radius: 10px;
-
     }
     &__item-title {
         font-size: 24px;

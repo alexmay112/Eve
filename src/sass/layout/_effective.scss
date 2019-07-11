@@ -1,6 +1,7 @@
 .main-color-accent {
     color: $main-accent-color;
 }
+
 .effective {
     .section-header__title::before {
         background: url("../img/mikocin-logo-single.png") 50% no-repeat;
@@ -14,9 +15,11 @@
         margin-top: 32px;
     }
 }
+
 .effective__list {
     margin-top: 90px;
 }
+
 .effective-list {
     display: flex;
     justify-content: space-between;
@@ -86,9 +89,11 @@
 .effective-list__item_creams::after {
     background: url("../img/icon-creams.png") 50% no-repeat;
 }
+
 .effective-list__item_honey::after {
     background: url("../img/icon-honey.png") 50% no-repeat;
 }
+
 .effective-list__item_product::after {
     background: url("../img/icon-product.png") 50% no-repeat;
 }
@@ -113,6 +118,7 @@
         border-radius: 8px;
     }
 }
+
 @media (max-width: 767px) {
     .effective-list {
         flex-direction: column;
