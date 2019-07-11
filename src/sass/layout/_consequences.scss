@@ -20,6 +20,8 @@
             left: 50%;
             top: -83px;
             transform: translateX(-50%);
+            background: url("../img/mikocin-logo.png") 50% no-repeat;
+
         }
     }
     &__subtitle {
@@ -30,8 +32,16 @@
 }
 
 .consequences {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     &__item {
+        max-width: 344px;
         &-title {
+            padding-left: 18px;
+            flex-basis: 50%;
             font-size: 22px;
             font-weight: 500;
             line-height: 26px;
@@ -49,15 +59,20 @@
             content: "1";
             display: block;
             position: absolute;
-            right: 8px;
-            top: 5px;
+            left: 155px;
+            top: 15px;
             font-size: 30px;
             color: #ffffff;
         }
+        &_amputation::after {
+            content: "2";
+        }
+        &_wound::after {
+            content: "3";
+        }
     }
-    &__item-title {
-        padding-left: 18px;
-        flex-basis: 50%;
+    &__photo {
+        max-width: none;
     }
     &__text {
         margin-top: 54px;
@@ -65,13 +80,13 @@
         line-height: 28px;
         position: relative;
         &::before {
+            content: "";
             height: 3px;
             width: 50px;
             position: absolute;
             left: 0;
             top: -23px;
             background-color: #becbd8;
-            content: "";
         }
     }
     &__statistic {
@@ -90,6 +105,7 @@
         font-weight: 500;
         position: relative;
         ::before {
+            content: "";
             height: 40px;
             width: 170px;
             display: block;
@@ -98,7 +114,6 @@
             top: -20px;
             transform: translateX(-50%);
             background: #ffffff url("../img/icon-stat.png") 50% no-repeat;
-            content: "";
         }
     }
 }
