@@ -363,23 +363,26 @@
     }
 }
 
-@media (max-width: 429px) {
+@media (max-width: 350px) {
     .product-photo {
         display: none;
     }
-    // .product-photo__price {
-    //     &_primary {
-    //         top: -15px;
-    //         left: 100px;
-    //     }
-    //     &_secondary {
-    //         top: 70px;
-    //         left: 150px;
-    //     }
-    // }
 }
 
-@media (min-width: 430px) and (max-width: 579px) {
+@media (min-width: 351px) and (max-width: 414px) {
+    .product-photo__price {
+        &_primary {
+            top: -15px;
+            left: 180px;
+        }
+        &_secondary {
+            top: 70px;
+            left: 210px;
+        }
+    }
+}
+
+@media (min-width: 415px) and (max-width: 579px) {
     .product-photo__price {
         &_primary {
             top: -15px;
@@ -391,16 +394,3 @@
         }
     }
 }
-
-// @media (max-width: 580px) {
-//     .product-photo__price {
-//         &_primary {
-//             top: -15px;
-//             left: 250px;
-//         }
-//         &_secondary {
-//             top: 70px;
-//             left: 300px;
-//         }
-//     }
-// }
