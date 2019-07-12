@@ -40,8 +40,6 @@ li {
     list-style: none;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+.main-color-accent {
+    color: $main-accent-color;
 }

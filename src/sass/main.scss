@@ -2,8 +2,10 @@
  @import 'utils/variables';
 
  @import 'base/basic';
- @import 'base/typography';
 
+ @import 'grid/grid';
+
+ @import 'layout/section';
  @import 'layout/hero';
  @import 'layout/consequences';
  @import 'layout/non-effective';

@@ -1,7 +1,3 @@
-.main-color-accent {
-    color: $main-accent-color;
-}
-
 .effective {
     .section-header__title::before {
         background: url("../img/mikocin-logo-single.png") 50% no-repeat;
@@ -104,7 +100,7 @@
         border-radius: 10px;
         background: $second-accent-color;
         background: linear-gradient(to right, rgb(255,107,0) 0%, rgb(167,202,63) 100%);
-        // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6b00', endColorstr='#a7ca3f', GradientType=1 );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6b00', endColorstr='#a7ca3f', GradientType=1 );
     }
     &__text {
         margin: 0;
